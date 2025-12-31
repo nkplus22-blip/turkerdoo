@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Otkup i prodaja žitarica | TÜRKER d.o.o. Gradačac</title>
+  <meta name="description" content="Profesionalan otkup i prodaja žitarica. TÜRKER d.o.o. Gradačac – pouzdan partner u agraru.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #6dbf4b;
+      --green-dark: #4a9e32;
+      --white: #ffffff;
+      --gray: #f4f6f4;
+      --text: #333333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--white);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--white);
+      border-bottom: 1px solid #e5e5e5;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      height: 55px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: var(--green-dark);
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 90px 15px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: var(--green-dark);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 16px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    ul.grain-list {
+      max-width: 600px;
+      margin: 30px auto;
+      list-style: none;
+      text-align: center;
+    }
+
+    ul.grain-list li {
+      padding: 10px;
+      font-size: 16px;
+      background: var(--gray);
+      margin-bottom: 10px;
+      border-radius: 6px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 30px;
+      background: var(--green);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+
+    .btn:hover {
+      background: var(--green-dark);
+    }
+
+    footer {
+      background: var(--green-dark);
+      color: var(--white);
+      padding: 35px 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .floating {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 2000;
+    }
+
+    .floating a {
+      background: var(--green);
+      color: white;
+      padding: 12px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    .floating a:hover {
+      background: var(--green-dark);
+    }
+
+    @media (max-width: 900px) {
+      nav ul {
+        display: none;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        background: white;
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="logoturker.JPG" alt="TÜRKER d.o.o. logo">
+      </a>
+    </div>
+
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="stretchfolije.html">Stretch folije</a></li>
+        <li><a href="zitarice.html">Žitarice</a></li>
+        <li><a href="iznajmljivanje-satora.html">Iznajmljivanje šatora</a></li>
+        <li><a href="pelet.html">Pelet</a></li>
+        <li><a href="transport.html">Transport</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h1>Otkup i prodaja žitarica</h1>
+
+    <p>
+      TÜRKER d.o.o. se profesionalno bavi otkupom i prodajom žitarica,
+      nudeći sigurnu, korektnu i transparentnu saradnju poljoprivrednim
+      proizvođačima i poslovnim partnerima. Dugogodišnje iskustvo u agrarnom
+      sektoru omogućava nam da pratimo tržišne standarde i garantujemo
+      pouzdan otkup po fer uslovima.
+    </p>
+
+    <p>
+      Sarađujemo sa proizvođačima širom regije, pružajući brzu organizaciju
+      otkupa, precizno mjerenje i tačnu isplatu. Naša poslovna politika
+      zasniva se na profesionalnosti, pouzdanosti i dugoročnoj saradnji.
+    </p>
+
+    <p><strong>Žitarice koje otkupljujemo i prodajemo:</strong></p>
+
+    <ul class="grain-list">
+      <li>Pšenica</li>
+      <li>Kukuruz</li>
+      <li>Ječam</li>
+      <li>Zob</li>
+      <li>Raž</li>
+      <li>Soja</li>
+    </ul>
+
+    <div style="text-align:center;">
+      <a href="https://wa.me/387603563477" target="_blank" class="btn">
+        Kontaktiraj nas
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>
+    © 2025 TÜRKER d.o.o. Gradačac<br>
+    Email: turker.bih@gmail.com | Tel: +387 60 35 63 477
+  </p>
+</footer>
+
+<div class="floating">
+  <a href="mailto:turker.bih@gmail.com">📧 Email</a>
+  <a href="https://wa.me/387603563477" target="_blank">💬 WhatsApp</a>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+  }
+</script>
+
+</body>
+</html>
