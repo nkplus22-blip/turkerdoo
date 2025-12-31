@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Transport i prevoz robe | TÜRKER d.o.o. Gradačac</title>
+  <meta name="description" content="Profesionalni transport i prevoz robe u BiH, Hrvatskoj, Srbiji i cijeloj EU. Sigurnost i tačnost isporuke.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #6dbf4b;
+      --green-dark: #4a9e32;
+      --white: #ffffff;
+      --gray: #f4f6f4;
+      --text: #333333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--white);
+      color: var(--text);
+    }
+
+    /* HEADER */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid #e5e5e5;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      height: 55px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: var(--green-dark);
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(to right, #e9f7e4, #ffffff);
+      padding: 90px 15px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      color: var(--green-dark);
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      max-width: 950px;
+      margin: auto;
+      line-height: 1.9;
+      font-size: 16px;
+    }
+
+    /* CONTENT */
+    section {
+      padding: 80px 15px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* FEATURES */
+    .features {
+      max-width: 900px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .feature {
+      background: var(--gray);
+      padding: 18px;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    .feature span {
+      color: var(--green-dark);
+      font-weight: 600;
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .card {
+      background: var(--gray);
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .card a {
+      display: block;
+      margin: 20px;
+      padding: 12px;
+      background: var(--green);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+
+    .card a:hover {
+      background: var(--green-dark);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--green-dark);
+      color: var(--white);
+      padding: 35px 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* FLOATING BUTTONS */
+    .floating {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 2000;
+    }
+
+    .floating a {
+      background: var(--green);
+      color: white;
+      padding: 12px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    .floating a:hover {
+      background: var(--green-dark);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      nav ul {
+        display: none;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        background: white;
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="logoturker.JPG" alt="TÜRKER d.o.o. logo">
+      </a>
+    </div>
+
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="stretchfolije.html">Stretch folije</a></li>
+        <li><a href="zitarice.html">Žitarice</a></li>
+        <li><a href="iznajmljivanje-satora.html">Iznajmljivanje šatora</a></li>
+        <li><a href="pelet.html">Pelet</a></li>
+        <li><a href="transport.html">Transport</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Transport i prevoz robe u BiH, regiji i EU</h1>
+  <p>
+    TÜRKER d.o.o. pruža profesionalne usluge transporta i prevoza robe
+    unutar Bosne i Hercegovine, Hrvatske i Srbije, kao i međunarodni
+    transport širom Evropske unije. Organizujemo i povratne ture iz EU
+    prema našim područjima, uz potpunu pouzdanost i sigurnost.
+  </p>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="features">
+      <div class="feature"><span>✔ Profesionalni i obučeni vozači:</span> Iskustvo, odgovornost i sigurnost.</div>
+      <div class="feature"><span>✔ Tačnost isporuke:</span> Poštivanje dogovorenih rokova bez izuzetaka.</div>
+      <div class="feature"><span>✔ Sigurnost robe:</span> Pažljivo rukovanje i pravilno osiguranje tereta.</div>
+      <div class="feature"><span>✔ Transport u EU:</span> Pouzdane međunarodne i povratne ture.</div>
+      <div class="feature"><span>✔ Fleksibilnost:</span> Prilagođavanje potrebama klijenata.</div>
+      <div class="feature"><span>✔ Dugoročna saradnja:</span> Povjerenje kao temelj poslovanja.</div>
+    </div>
+
+    <div class="gallery">
+      <div class="card">
+        <img src="Kamion.JPG" alt="Kamionski transport">
+        <a href="https://wa.me/387603563477" target="_blank">Kontaktiraj nas</a>
+      </div>
+
+      <div class="card">
+        <img src="Kombi.JPG" alt="Kombi transport">
+        <a href="https://wa.me/387603563477" target="_blank">Kontaktiraj nas</a>
+      </div>
+
+      <div class="card">
+        <img src="Kombi2.JPG" alt="Dostavni kombi transport">
+        <a href="https://wa.me/387603563477" target="_blank">Kontaktiraj nas</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>
+    © 2025 TÜRKER d.o.o. Gradačac<br>
+    Email: turker.bih@gmail.com | Tel: +387 60 35 63 477
+  </p>
+</footer>
+
+<div class="floating">
+  <a href="mailto:turker.bih@gmail.com">📧 Email</a>
+  <a href="https://wa.me/387603563477" target="_blank">💬 WhatsApp</a>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+  }
+</script>
+
+</body>
+</html>
