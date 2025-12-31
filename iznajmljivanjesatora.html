@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Iznajmljivanje šatora | TÜRKER d.o.o. Gradačac</title>
+  <meta name="description" content="Profesionalno iznajmljivanje šatora za svadbe, rođendane, manifestacije i događaje. TÜRKER d.o.o. Gradačac.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #6dbf4b;
+      --green-dark: #4a9e32;
+      --white: #ffffff;
+      --gray: #f4f6f4;
+      --text: #333333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--white);
+      color: var(--text);
+    }
+
+    /* HEADER */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid #e5e5e5;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      height: 55px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: var(--green-dark);
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      padding: 90px 15px;
+      background: linear-gradient(to right, #e9f7e4, #ffffff);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    /* Background icons */
+    .hero::before {
+      content: "🎉 🎂 💍 🏕️ 🎈";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 90px;
+      opacity: 0.06;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      color: var(--green-dark);
+      margin-bottom: 25px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero p {
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.8;
+      font-size: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* CONTENT */
+    section {
+      padding: 80px 15px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .container p {
+      line-height: 1.8;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .services {
+      margin: 40px 0;
+    }
+
+    .services div {
+      background: var(--gray);
+      padding: 18px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 32px;
+      background: var(--green);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+
+    .btn:hover {
+      background: var(--green-dark);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--green-dark);
+      color: var(--white);
+      padding: 35px 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* FLOATING BUTTONS */
+    .floating {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 2000;
+    }
+
+    .floating a {
+      background: var(--green);
+      color: white;
+      padding: 12px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    .floating a:hover {
+      background: var(--green-dark);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      nav ul {
+        display: none;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        background: white;
+        width: 100%;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .hero::before {
+        font-size: 60px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="logoturker.JPG" alt="TÜRKER d.o.o. logo">
+      </a>
+    </div>
+
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html">Početna</a></li>
+        <li><a href="stretchfolije.html">Stretch folije</a></li>
+        <li><a href="zitarice.html">Žitarice</a></li>
+        <li><a href="iznajmljivanje-satora.html">Iznajmljivanje šatora</a></li>
+        <li><a href="pelet.html">Pelet</a></li>
+        <li><a href="transport.html">Transport</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Iznajmljivanje šatora za sve vrste događaja</h1>
+  <p>
+    TÜRKER d.o.o. nudi profesionalno iznajmljivanje šatora za svadbe, rođendane,
+    privatne proslave, poslovne događaje, sajmove i razne manifestacije.
+    Naša usluga je prilagođena klijentima koji traže pouzdanost, kvalitet
+    i besprijekornu organizaciju.
+  </p>
+</section>
+
+<section>
+  <div class="container">
+    <p>
+      Naši šatori su stabilni, sigurni i prilagodljivi različitim prostorima i
+      vremenskim uslovima. Vodimo računa o svakom detalju, od montaže do demontaže,
+      kako bi vaš događaj protekao bez ikakvih briga.
+    </p>
+
+    <p>
+      Saradnju gradimo na profesionalnom pristupu, tačnosti i dogovoru,
+      što nas čini pouzdanim partnerom za sve vrste svečanosti i događaja.
+    </p>
+
+    <div class="services">
+      <div>🎉 Svadbe i privatne svečanosti</div>
+      <div>🎂 Rođendani i porodične proslave</div>
+      <div>🏕️ Sajmovi, manifestacije i javni događaji</div>
+      <div>💼 Poslovni i promotivni eventi</div>
+    </div>
+
+    <a href="https://wa.me/387603563477" target="_blank" class="btn">
+      Kontaktiraj nas
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>
+    © 2025 TÜRKER d.o.o. Gradačac<br>
+    Email: turker.bih@gmail.com | Tel: +387 60 35 63 477
+  </p>
+</footer>
+
+<div class="floating">
+  <a href="mailto:turker.bih@gmail.com">📧 Email</a>
+  <a href="https://wa.me/387603563477" target="_blank">💬 WhatsApp</a>
+</div>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+  }
+</script>
+
+</body>
+</html>
